@@ -1,0 +1,200 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Configuration
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Themes: Awesome-CV
+\documentclass[]{awesome-cv}
+\usepackage{textcomp}
+%%% Override a directory location for fonts(default: 'fonts/')
+\fontdir[fonts/]
+
+%%% Configure a directory location for sections
+\newcommand*{\sectiondir}{resume/}
+
+%%% Override color
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+%% Color for highlight
+% Define your custom color if you don't like awesome colors
+\colorlet{awesome}{awesome-red}
+\definecolor{myblue}{RGB}{62,95,179}
+%\definecolor{awesome}{HTML}{CA63A8}
+%% Colors for text
+%\definecolor{darktext}{HTML}{414141}
+%\definecolor{text}{HTML}{414141}
+%\definecolor{graytext}{HTML}{414141}
+%\definecolor{lighttext}{HTML}{414141}
+
+%%% Override a separator for social informations in header(default: ' | ')
+%\headersocialsep[\quad\textbar\quad]
+    \begin{document}
+    
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Profile
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+	\headerfirstnamestyle{\textbf{J}acob}\headerlastnamestyle{ \hspace{2pt} Danovitch} \\
+	\vspace{2mm}
+	{\faEnvelope\ jacob.danovitch@carleton.ca} | {\faLink\ http://jacobdanovitch.me} | {\faGithub\ jacobdanovitch} | {\faLinkedin\ jacobdanovitch}
+\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Education
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{1mm}
+\cvsection{Education}
+\begin{cventries}
+	\cventry
+    {\textbf{GPA:} 4.0 (A+)}
+	{Bachelor of Computer Science, Honors}
+	{Carleton University}
+	{Sep 2017 – May 2020 (Expected)}
+    {\textbf{2018-19 Coursework:} Clinical statistics, functional programming, AI}
+\end{cventries}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Experience
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{-2mm}
+\cvsection{Professional Experience}
+\begin{cventries}
+    \vspace{-1mm}
+    \cventry
+	{Cortana Explore Intern}
+	{Microsoft AI and Research}
+	{Seattle, USA}
+	{May 2018 - August 2018}
+	{\begin{cvitems}
+		\item {Created Cortana-assisted data visualization for beta-testing application using C\#, Azure SQL. }
+	    \item {OneWeek 2018: Implemented model taking Cortana query as input, generates semantically similar queries.}
+        \item {Received offer to return as software engineering intern in May 2019.}
+		\end{cvitems}}
+        
+    \vspace{-4.5mm}
+    \cventry
+	{Software Development Intern}
+	{Medimo Labs}
+	{Toronto, CA}
+	{July 2017 – September 2017}
+	{\begin{cvitems}
+		\item {Medical data application for doctors built with Javascript (React.js).}
+        \item {Implemented patient profile, navigation tools, and data visualization.}
+		\end{cvitems}}
+\end{cventries}
+
+\vspace{-4.5mm}
+\cvsection{Academics}
+\begin{cventries}  
+    \cventry
+      {Teaching Assistant}
+      {School of Computer Science}
+      {Carleton University}
+      {September 2018 - December 2018}
+      {\begin{cvitems}
+          \item {Teaching assistant for COMP1005, Introduction to Computer Science I.}
+          \end{cvitems}}	
+    
+    \vspace{-4mm}
+    \cventry
+      {Research Scientist}
+      {Science of Imagination Laboratory}
+      {Carleton University}
+      {September 2018 - December 2018}
+      {\begin{cvitems}
+          \item {Will research the applications of natural language processing techniques to conceptual metaphor.}
+          \item {Directed studies under the supervision of Professor Jim Davies.}
+          \end{cvitems}}	
+    
+    \vspace{-4mm}
+    \cventry
+      {Statistical Programming with R Tutorial}
+      {Faculty of Psychology}
+      {Carleton University}
+      {August 2018}
+      {\begin{cvitems}
+      	\item{Writing comprehensive tutorial about using R Notebook for clinical statistics assignments.}
+        \item{For use by future students of Professor Cecilia Jorgenson.}
+      \end{cvitems}}
+   
+    \vspace{-4mm}
+    \cventry
+      {Machine Learning Project}
+      {Faculty of Journalism}
+      {Carleton University}
+      {November 2017}
+      {\begin{cvitems}
+      	\item{Helping Professor Christine Crowther assign students to groups for midterm project.}
+        \item{Unsupervised machine learning algorithm resulted in strong grades, significant time savings.}
+      \end{cvitems}}
+    
+    \vspace{-4mm}
+    \cventry
+	{Recognized Study Group Leader}
+	{Science Student Success Centre}
+	{Carleton University}
+	{September 2017 – May 2018}
+	{\begin{cvitems}
+		\item {Assisting peers with introductory programming classes using Jupyter Notebook tutorials.}
+		\item {Used Node.js, React, and Firebase to implement oauth2 attendance-verification website.}
+		\end{cvitems}}
+\end{cventries}
+
+\vspace{-4mm}
+\cvsection{Projects}
+\begin{cventries}
+    \cventry
+        {Using Jupyter Notebook, Pandas, Scikit-Learn for workshops on Gradient Descent, K-Means Clustering, Least-Squares Regression as part of STEM Fellowship's Big Data Challenge.}
+        {Data Science Workshops}
+        {Python}
+        {}
+        {}
+   	
+    \vspace{-5.5mm}
+    \cventry
+	{A Google Assistant skill providing Carleton students easier access to the cafeteria menu. Recognized by Google Developer Program for receiving several thousand uses a month.}
+	{TheCaf on Google Home}
+	{Python (Flask), Heroku}
+	{}
+    {}
+\end{cventries}
+
+\vspace{-5mm}
+\cvsection{Awards}
+\begin{cvhonors}
+	\cvhonor
+	{Lester B. Pearson Award}
+	{Awarded to outstanding students proceeding from one year to another.}
+	{Carleton University}
+	{May 2018}
+    \cvhonor
+    {Relay Programming}
+	{6\textsuperscript{th} out of 30 in React and Java challenge.}
+	{CS Games 2018}
+	{Mar. 2018}
+	\cvhonor
+    {Dean\textquotesingle{}s List}
+	{Awarded to high-achieving students in the Faculty of Science.}
+	{Carleton University}
+	{Feb. 2018}
+	\cvhonor
+	{AP English Language and Composition Exam}
+	{Placed in the top 9.1\% of participants, achieving highest possible score.}
+	{US College Board}
+	{Jun. 2017}
+\end{cvhonors}
+\ 
+\end{document}
